@@ -74,13 +74,15 @@ public final class ElijahMod {
     public ElijahMod(FMLJavaModLoadingContext context) {
         var modBusGroup = context.getModBusGroup();
 
+        // Register your custom items
+        ModItems.ITEMS.register(modBusGroup);
+
         // Register the commonSetup method for modloading
         FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modBusGroup);
-        // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modBusGroup);
+
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modBusGroup);
 
@@ -90,6 +92,7 @@ public final class ElijahMod {
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
@@ -105,8 +108,8 @@ public final class ElijahMod {
 
     // Add the example block item to the building blocks tab
     private static void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+            event.accept(ModItems.HAMMER.get());
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
