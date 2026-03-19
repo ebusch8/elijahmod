@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+  <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="elijahmod"/>
+  <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.minecraftforge.launcher.Main"/>
+  <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.net.preferIPv6Addresses=system -Deventbus.api.strictRuntimeChecks=true -Dforge.enabledGameTestNamespaces=examplemod"/>
+  <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--main net.minecraftforge.bootstrap.ForgeBootstrap --cache C:\Users\mbusch\.gradle\caches\minecraftforge\forgegradle\slime-launcher\cache\net\minecraftforge\forge\1.21.11-61.1.0 --metadata C:\Users\mbusch\Elijah's Mod\.gradle\mavenizer\repo\net\minecraftforge\forge\1.21.11-61.1.0\forge-1.21.11-61.1.0-metadata.zip -- --launchTarget forge_userdev_data --assetIndex {asset_index} --assetsDir {assets_root} --gameDir . --mod examplemod --all --output C:\Users\mbusch\Elijah's Mod\src\generated\resources --existing C:\Users\mbusch\Elijah's Mod\src\main\resources"/>
+  <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\mbusch\Elijah's Mod\run-data"/>
+  <mapAttribute key="org.eclipse.debug.core.environmentVariables">
+    <mapEntry key="MCP_MAPPINGS" value="official_1.21.11"/>
+  </mapAttribute>
+  <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+    <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;runtimeClasspathEntry projectName=&quot;elijahmod&quot; type=&quot;1&quot; path=&quot;5&quot; /&gt;"/>
+    <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.buildship.core.gradleclasspathcontainer&quot; javaProject=&quot;elijahmod&quot; type=&quot;4&quot; path=&quot;5&quot; /&gt;"/>
+    <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;runtimeClasspathEntry externalArchive=&quot;C:\Users\mbusch\.gradle\caches\modules-2\files-2.1\net.minecraftforge\slime-launcher\0.1.8\41629a648be30f9805039f2c6e7235b1ebd714c\slime-launcher-0.1.8.jar&quot; type=&quot;2&quot; path=&quot;5&quot; /&gt;"/>
+    <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21&quot; type=&quot;4&quot; path=&quot;5&quot; /&gt;"/>
+  </listAttribute>
+  <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+</launchConfiguration>
